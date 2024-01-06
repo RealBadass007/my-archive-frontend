@@ -50,18 +50,18 @@ const Tools = () => {
           className="box"
         >
           <div className="title">
-          <img style={{ marginTop: "20px", width: "170px", height: "170px" }} src="/gradle.svg" alt="" />
+          <img style={{ marginTop: "70px", width: "170px", height: "170px" }} src="/gradle.svg" alt="" />
         </div>
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "220px", height: "200px" }} src="/postman.png" alt="" />
+          <img style={{ marginTop: "70px", width: "220px", height: "200px" }} src="/postman.png" alt="" />
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{ width: "240px", height: "220px" }} src="/github_actions_cicd.png" alt="" />
+          <img style={{ marginTop: "70px", width: "240px", height: "220px" }} src="/github_actions_cicd.png" alt="" />
         </motion.div>
         
       </motion.div>
@@ -69,17 +69,17 @@ const Tools = () => {
         <motion.div
             className="box"
           >
-            <img style={{marginTop: "80px", width: "250px", height: "80px" }} src="/JUnit.png" alt="" />
+            <img style={{ marginTop: "140px", width: "250px", height: "80px" }} src="/JUnit.png" alt="" />
           </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{ width: "200px", height: "200px" }} src="/docker.png"/>
+          <img style={{ marginTop: "70px", width: "200px", height: "200px" }} src="/docker.png"/>
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{marginTop: "20px", width: "150px", height: "200px" }} src="/jenkins.svg" alt="" />
+          <img style={{ marginTop: "70px", width: "150px", height: "200px" }} src="/jenkins.svg" alt="" />
         </motion.div>
       </motion.div>
     </motion.div>

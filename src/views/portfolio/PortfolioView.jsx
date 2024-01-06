@@ -22,26 +22,26 @@ import Projects from "../../components/projects/Projects";
 const PortfolioView = () => {
     return (
         <PortfolioViewWrapper>
-            <div>
-            <section id="Homepage">
+            <div className='sc-games section'>
+            <section class="some-sections" id="Homepage">
                 <Chirag />
             </section>
-            <section id="Services">
+            <section class="some-sections" id="Services">
                 <Parallax type="professionalexp" />
             </section>
-            <section>
+            <section class="some-sections" >
                 <Oracle />
             </section>
-            <section>
+            <section class="some-sectionss" >
                 <Cillyfox />
             </section>
-            <section>
+            <section class="some-sectionsss" >
                 <Uinsports />
             </section>
-            <section id="Services">
+            <section class="some-sections" id="Services">
                 <Parallax type="skills" />
             </section>
-            <section>
+            <section >
                 <Languages />
             </section>
             <section>
@@ -53,11 +53,11 @@ const PortfolioView = () => {
             <section>
                 <Cloud />
             </section>
-            <section id="Portfolio">
+            <section class="some-sections" id="Portfolio">
                 <Parallax type="projects" />
             </section>
             <Projects />
-            <section id="Contact">
+            <section class="some-sections" id="Contact">
                 <Contact />
             </section>
             {/* Framer Motion Crash Course */}
@@ -71,9 +71,36 @@ const PortfolioView = () => {
 export default PortfolioView;
 
 const PortfolioViewWrapper = styled.div`
-    section {
+
+
+    .some-sections {
         height: 100vh;
         width: 100vw;
         overflow: hidden;
+    }
+
+    .some-sectionss {
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .some-sectionsss {
+        height: 80vh;
+        width: 100vw;
+    }
+
+      .sc-games{
+        min-height: 100vh;
+        padding-top: 0px;
       }
-`;
+
+      
+    `;
+
+// const PortfolioViewWrapper = styled.div`
+//     section {
+//         height: 100vh;
+//         width: 100vw;
+//         overflow: hidden;
+//       }
+// `;

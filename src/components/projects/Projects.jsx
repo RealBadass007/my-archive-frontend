@@ -3,6 +3,7 @@ import "./projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -10,18 +11,21 @@ const items = [
     title: "MY ARCHIVE",
     img: "/myarchive_project.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "/",
   },
   {
     id: 2,
     title: "Intoxication Detection App",
-    img: "/myarchive_project.png",
-    desc: "A Software based solution to detect driver’s alcohol intoxication state, thus preventing DUI accidents. Detection algorithm comprises 3 neurocognitive tests which evaluates the user's reaction time & accuracy. Has a feature for sharing the current location to any of the user’s contacts using Whatsapp API. Consumes google maps API for booking a cab from the user’s current location to their saved plus code",
+    img: "/d3app.png",
+    desc: "A Software based solution to detect driver’s alcohol intoxication state, thus preventing DUI accidents. Detection algorithm comprises 3 neurocognitive tests which evaluates the user's reaction time & accuracy. The app also has a feature for sharing the current location to any of the user’s contacts using Whatsapp API. It consumes google maps API for booking a cab from the user’s current location to their saved plus code",
+    link: "https://github.com/RealBadass007/myapp_3dapp",
   },
   {
     id: 3,
     title: "Chrome Dino: 3D MR Game",
-    img: "/myarchive_project.png",
+    img: "/chrome_dino.png",
     desc: "A smartphone 3D Mixed Reality game inspired from the famous google chrome dino game. Leveraged Blender to design and model 3D environments, characters, and assets, ensuring high-quality visuals",
+    link: "https://www.instagram.com/p/CSCWWYeDM6l/",
   },
 ];
 
@@ -45,7 +49,7 @@ const Single = ({ item }) => {
             <div className="textContainer" style={{y}}>
               <h2>{item.title}</h2>
               <p>{item.desc}</p>
-              <button>See Demo</button>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">See More</a>
             </div>
           </div>
         </div>

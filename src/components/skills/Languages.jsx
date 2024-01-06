@@ -37,7 +37,7 @@ const Languages = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-        <br /><br />
+        <br />
           A blend of technical curiosity
           <br /> and creativity
         </p>
@@ -93,7 +93,7 @@ const Languages = () => {
         <motion.div
           className="box"
         >
-          <img style={{marginTop: "40px"}} src="/typescript.png" alt="" />
+          <img style={{marginTop: "40px", width: "270px", height: "200px"}} src="/typescript.png" alt="" />
         </motion.div>
       </motion.div>
     </motion.div>

@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="#" className='navbar-brand text-white text-uppercase no-wrap d-block'>
               my <span>archive</span>
             </a>
-            <p className='para-text'>Lorem ipsum dolor sitamt consectue adispicing duis soolici tudin ague suisomid. Nulla vullam dolor.</p>
+            <p>This website is still under construction.<br/>Just need to center one last div.</p>
           </div>
 
           <div className='footer-item'>

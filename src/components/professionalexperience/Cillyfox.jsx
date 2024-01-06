@@ -58,16 +58,9 @@ const Oracle = () => {
       <motion.div className="listContainer" variants={variants}>
       <div className="box">
         <div className="para-text">
-          ● Planned, designed and executed the development of core Business Logic and robust, highly scalable RESTful
-          APIs for more than 25+ new features, in a fast paced, high-intensity work environment <br/>
-          ● Identified and resolved 10+ critical bugs, 3 within the production environment, ensuring system stability and
-          minimizing disruptions<br/>
-          ● Actively contributed to 3 concurrent projects over a four-month period and ensured timely delivery of all
-          components with minimal technical debt<br/>
-          ● Implemented automation for starting over 45 mock servers daily, thus resulting in an efficiency gain of 93.3%<br/>
-          ● Represented my department at a client location and played a pivotal role in the seamless installation of the
-          banking application and subsequent build deployments on application servers and web servers<br/>
-          ● Conducted on-site integration of multiple modules post the initial development cycle
+          ● Developed 3 Mixed Reality (MR) mini-games from scratch in Unity Engine for MR Headsets and created dynamic game-logic using C# and built 3D models using Blender software<br/>
+          ● Optimized core gameplay mechanics, enhancing the overall user experience<br/>
+          ● Conducted rigorous play-testing to identify and resolve bugs related to user interactions
         </div>
       </div>
       </motion.div>

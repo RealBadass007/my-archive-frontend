@@ -50,35 +50,35 @@ const Frameworks = () => {
           className="box"
         >
           <div className="title">
-          <img style={{ width: "220px", height: "120px" }} src="/springboot.webp" alt="" />
+          <img style={{ marginTop: "70px", width: "300px", height: "165px" }} src="/springboot.webp" alt="" />
         </div>
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{ width: "220px", height: "120px" }} src="/soaprest.png"/>
+          <img style={{ marginTop: "70px", width: "240px", height: "140px" }} src="/soaprest.png"/>
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{ width: "250px", height: "100px" }} src="/eclipselink.png" alt="" />
+          <img style={{ marginTop: "70px", width: "250px", height: "120px" }} src="/eclipselink.png" alt="" />
         </motion.div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
         >
-          <img style={{ width: "150px", height: "170px" }} src="/react.png" alt="" />
+          <img style={{ marginTop: "70px", width: "150px", height: "170px" }} src="/react.png" alt="" />
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "200px", height: "200px" }} src="/microservices.png" alt="" />
+          <img style={{ marginTop: "70px", width: "210px", height: "210px" }} src="/microservices.png" alt="" />
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "300px", height: "200px" }} src="/jms.png" alt="" />
+          <img style={{ marginTop: "70px", width: "300px", height: "200px" }} src="/jms.png" alt="" />
         </motion.div>
       </motion.div>
     </motion.div>

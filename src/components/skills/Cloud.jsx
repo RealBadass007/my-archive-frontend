@@ -49,23 +49,23 @@ const Cloud = () => {
           className="box"
         >
           <div className="title">
-          <img style={{ width: "150px", height: "220px" }} src="/aws_ec2.png" alt="" />
+          <img style={{ marginTop: "70px", width: "150px", height: "220px" }} src="/aws_ec2.png" alt="" />
         </div>
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "150px", height: "220px" }} src="/aws_rds.png" alt="" />
+          <img style={{ marginTop: "70px",width: "150px", height: "220px" }} src="/aws_rds.png" alt="" />
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "150px", height: "200px" }} src="/aws_s3.png" alt="" />
+          <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_s3.png" alt="" />
         </motion.div>
         <motion.div
           className="box"
         >
-          <img style={{width: "150px", height: "200px" }} src="/aws_route53.png" alt="" />
+          <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_route53.png" alt="" />
         </motion.div>
       </motion.div>
     </motion.div>
