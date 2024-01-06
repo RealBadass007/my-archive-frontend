@@ -64,6 +64,10 @@ const Contact = () => {
           <h2>Phone</h2>
           <span>+91 9930403449</span>
         </motion.div>
+        <motion.div className="item" variants={variants}>
+          <h2>Resume</h2>
+          <a href="/Chirag_Bangera_Resume.pdf" target="_blank"><span>Click here to download (NOT UPDATED!)</span></a>
+        </motion.div>
       </motion.div>
       <div className="formContainer">
         <motion.div
