@@ -1,0 +1,10 @@
+@import "../../app.scss";
+
+section {
+  overflow: hidden;
+
+    @include mobile {
+        overflow-y: scroll;
+    }
+  
+}

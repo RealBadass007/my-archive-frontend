@@ -67,7 +67,7 @@ const HomePage = () => {
       <MyGameList myGameIds = {myGameIds} sliceValue={9} games={myGameFromRawg} />
       <div className="d-flex justify-content-center">
         <Link to="/games" className="section-btn">
-          see more my games
+          browse your library
         </Link>
       </div>
     </>

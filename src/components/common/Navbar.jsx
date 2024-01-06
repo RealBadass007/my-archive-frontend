@@ -31,13 +31,10 @@ const Navbar = () => {
                 <Link to = "/" className='nav-link'>home</Link>
               </li>
               <li className='nav-item'>
-                <Link to = "/creators" className='nav-link'>creators</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to = "/stores" className='nav-link'>stores</Link>
-              </li>
-              <li className='nav-item'>
                 <Link to = "/games" className='nav-link'>games</Link>
+              </li>
+              <li className='nav-item'>
+                <Link to = "/portfolio" className='nav-link'>portfolio</Link>
               </li>
             </ul>
 
