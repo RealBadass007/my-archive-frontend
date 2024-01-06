@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { BsRssFill, BsSteam, BsTwitch, BsYoutube} from "react-icons/bs";
+import { BsRssFill, BsSteam, BsTwitch, BsYoutube, BsLinkedin} from "react-icons/bs";
 import { MdClose } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectSidebarStatus, setSidebarOff, setSidebarOn } from '../../redux/store/sidebarSlice';
@@ -41,23 +41,8 @@ const Navbar = () => {
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>
               <li className='text-uppercase fw-7 w-100 connect-text mb-2'>connect</li>
               <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsRssFill />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsSteam size = { 18 } />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsTwitch size = { 18 } />
-                </Link>
-              </li>
-              <li className='connect-item'>
-                <Link to = "/" className='connect-link'>
-                  <BsYoutube size = { 19 } />
+                <Link to = "https://www.linkedin.com/in/chirag-bangera-894949201/" target='_blank' className='connect-link'>
+                  <BsLinkedin />
                 </Link>
               </li>
             </ul>

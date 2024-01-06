@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='footer-top'>
         <div className='footer-content text-white d-grid container'>
           <div className='footer-item'>
-            <a href="#" className='navbar-brand text-white text-uppercase no-wrap d-block'>
+            <a href="/" className='navbar-brand text-white text-uppercase no-wrap d-block'>
               my <span>archive</span>
             </a>
             <p>This website is still under construction.<br/>Just need to center one last div.</p>
@@ -16,8 +16,8 @@ const Footer = () => {
           <div className='footer-item'>
             <h5 className='footer-item-title text-uppercase'>quick links</h5>
             <ul className='footer-item-links'>
-              <li><a href="#" className='text-white'>Games</a></li>
-              <li><a href="#" className='text-white'>Portfolio</a></li>
+              <li><a href="/games" className='text-white'>Games</a></li>
+              <li><a href="/portfolio" className='text-white'>Portfolio</a></li>
             </ul>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className='container d-flex flex-column text-center'>
           <p className='footer-bottom-text text-green'></p>
           <ul className='footer-bottom-links d-flex justif-content-center'>
-            <li><a href="#" className='text-white'>Home</a></li>
+            <li><a href="/" className='text-white'>Home</a></li>
             <li><a href="#" className='text-white'>Contact</a></li>
           </ul>
         </div>
