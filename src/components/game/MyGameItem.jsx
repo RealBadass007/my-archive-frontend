@@ -11,7 +11,7 @@ function DeleteGameFromLibrary(gameId) {
   // let formField = new FormData();
   // formField.append('id', gameId);
   console.log(requestPayload);
-  springAaxios.post("http://localhost:8091/games/deletegame", {id: gameId})
+  springAaxios.post("http://54.90.164.122:8091/games/deletegame", {id: gameId})
 };
 
 const MyGameItem = ({ gameItem }) => {
