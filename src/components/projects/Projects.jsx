@@ -10,7 +10,7 @@ const items = [
     id: 1,
     title: "MY ARCHIVE",
     img: "/myarchive_project.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "A digital personal archive built using Spring boot and React, where users can upload and maintain data related to games, movies, books, etc. Containerized the components using Docker and utilized Github Actions CI/CD workflow for seamless build and deployment on the AWS EC2 instance. Leveraged AWS RDS (PostgreSQL) database cloud service for scalable, secure, and efficient data retreival.",
     link: "/",
   },
   {

@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="/" className='navbar-brand text-white text-uppercase no-wrap d-block'>
               my <span>archive</span>
             </a>
-            <p>This website is still under construction.<br/>Just need to center one last div.</p>
+            <p>This website is still under construction.<br/>Just need to center one div and I'll be done.</p>
           </div>
 
           <div className='footer-item'>

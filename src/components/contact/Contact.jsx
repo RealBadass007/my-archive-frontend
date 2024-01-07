@@ -66,7 +66,7 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Resume</h2>
-          <a href="/Chirag_Bangera_Resume.pdf" target="_blank"><span>Click here to download (NOT UPDATED!)</span></a>
+          <a href="/Chirag_Bangera_Resume.pdf" target="_blank"><span>Click here to download</span></a>
         </motion.div>
       </motion.div>
       <div className="formContainer">
