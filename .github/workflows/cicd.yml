@@ -32,4 +32,4 @@ jobs:
       - name: Delete old container
         run: sudo docker rm -f react-myarchive-container_local
       - name: Run docker container
-        run: sudo docker run -d --name react-myarchive-container_local -p 80:5173 realbadass/myarchive-react-image
+        run: sudo docker run -d --name react-myarchive-container_local -p 5173:5173 realbadass/myarchive-react-image
