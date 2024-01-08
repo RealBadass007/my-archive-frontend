@@ -1,5 +1,8 @@
 import axios from 'axios';
 
+const arr = window.location.href.split(":");
+console.log("Hello from springboot axios url => " + arr[0] + ":" + arr[1]);
+
 export default axios.create({
-    baseURL: "http://54.90.164.122:8091/"
+    baseURL: arr[0] + ":" + arr[1] + "api"
 });

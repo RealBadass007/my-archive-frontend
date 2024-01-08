@@ -25,6 +25,8 @@ jobs:
     needs: build
     runs-on: [aws-ec2_2]
     steps:
+      - name: Cleanup all unused docker components
+        run: sudo docker system prune --force
       - name: Pull image from docker hub
         run: sudo docker pull realbadass/myarchive-react-image:latest
       - name: Delete old container

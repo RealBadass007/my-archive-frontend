@@ -11,7 +11,7 @@ function AddGameToLibrary(gameId) {
   // let formField = new FormData();
   // formField.append('id', gameId);
   console.log(requestPayload);
-  springAaxios.post("http://54.90.164.122:8091/games/addgame", {id: gameId})
+  springAaxios.post("/games/addgame", {id: gameId})
 };
 
 const GameItem = ({ myGameIds = [], gameItem }) => {
