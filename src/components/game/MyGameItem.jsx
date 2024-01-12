@@ -5,16 +5,23 @@ import PropTypes from 'prop-types';
 import { StarRating } from '../common';
 
 import springAaxios from "../../api/springbootaxios";
+import { useState } from "react";
 
-function DeleteGameFromLibrary(gameId) {
+function DeleteGameFromLibrary(gameId, setDeleteGame) {
   let requestPayload = { id: gameId};
   // let formField = new FormData();
   // formField.append('id', gameId);
   console.log(requestPayload);
   springAaxios.post("/games/deletegame", {id: gameId})
+  setDeleteGame(1);
 };
 
 const MyGameItem = ({ gameItem }) => {
+
+  const [deleteGame, setDeleteGame] = useState(0);
+
+  console.log("deleteGame => " + deleteGame);
+
   return (
     <GameItemWrapper className='card'>
       <div className='card-top img-fit-cover'>
@@ -43,7 +50,7 @@ const MyGameItem = ({ gameItem }) => {
         </div>
         <div className="d-flex justify-content-center">
         {
-        <button onClick={ () => DeleteGameFromLibrary(gameItem?.id) } className="card-button section-btn text-align: center">Remove from library</button>
+          (deleteGame === 0) ? (<button onClick={ () => DeleteGameFromLibrary(gameItem?.id, setDeleteGame) } className="card-button section-btn text-align: center">Remove from library</button>) : (<button className="card-button section-btn-non-selectable text-align: center">Removed from library</button>)          
         }
         </div>
       </div>
@@ -130,19 +137,13 @@ flex-direction: column;
     }
   }
 
-  .section-btn-added {
+  .section-btn-non-selectable {
     border: 1px solid var(--clr-green-normal);
     display: flex;
-    margin-top: 10px;
-    min-width: 200px;
-    padding: 5px 20px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    color: var(--clr-white);
-    position: relative;
-    z-index: 5;
+    margin-top: 15px;
+    &:hover{
+      background-color: unset;
+    }
   }
 
 }

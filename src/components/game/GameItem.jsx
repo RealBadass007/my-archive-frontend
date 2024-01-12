@@ -5,16 +5,23 @@ import PropTypes from 'prop-types';
 import { StarRating } from '../common';
 
 import springAaxios from "../../api/springbootaxios";
+import { useState } from 'react';
 
-function AddGameToLibrary(gameId) {
+function AddGameToLibrary(gameId, setAddGame) {
   let requestPayload = { id: gameId};
   // let formField = new FormData();
   // formField.append('id', gameId);
   console.log(requestPayload);
-  springAaxios.post("/games/addgame", {id: gameId})
+  springAaxios.post("/games/addgame", {id: gameId});
+  setAddGame(1);
 };
 
 const GameItem = ({ myGameIds = [], gameItem }) => {
+
+  const [addGame, setAddGame] = useState(0);
+
+  console.log("addGame => " + addGame);
+
   return (
     <GameItemWrapper className='card'>
       <div className='card-top img-fit-cover'>
@@ -43,7 +50,9 @@ const GameItem = ({ myGameIds = [], gameItem }) => {
         </div>
         <div className="d-flex justify-content-center">
         {
-          myGameIds.includes(gameItem?.id) ? <button className="section-btn-added text-align: center">already in your library</button> : <button onClick={ () => AddGameToLibrary(gameItem?.id) } className="card-button section-btn text-align: center">add to your library</button>
+          (addGame === 0) 
+          ? (myGameIds.includes(gameItem?.id) ? <button className="card-button section-btn-non-selectable text-align: center">already in your library</button> : <button onClick={ () => AddGameToLibrary(gameItem?.id, setAddGame) } className="card-button section-btn text-align: center">add to your library</button>)
+          : <button className="card-button section-btn-non-selectable text-align: center">Added to your library</button>
         }
         </div>
       </div>
@@ -130,19 +139,12 @@ const GameItemWrapper = styled.div`
       }
     }
 
-    .section-btn-added {
-      border: 1px solid var(--clr-green-normal);
+    .section-btn-non-selectable {
       display: flex;
       margin-top: 15px;
-      min-width: 200px;
-      padding: 10px 16px;
-      text-transform: uppercase;
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--clr-white);
-      position: relative;
-      z-index: 5;
+      &:hover{
+        background-color: unset;
+      }
     }
   
   }

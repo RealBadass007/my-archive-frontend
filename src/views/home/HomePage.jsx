@@ -199,6 +199,10 @@ const HomeWrapper = styled.div`
     .section-btn {
       margin-top: 60px;
     }
+
+    .section-btn-non-selectable {
+      margin-top: 60px;
+    }
   }
 
   .sc-join {

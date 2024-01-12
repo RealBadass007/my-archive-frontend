@@ -8,8 +8,23 @@ import { BsStar } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { StarRating } from "../common";
 
+import springAaxios from "../../api/springbootaxios";
+
+function AddGameToLibrary(gameId, setAddGame) {
+  let requestPayload = { id: gameId};
+  // let formField = new FormData();
+  // formField.append('id', gameId);
+  console.log(requestPayload);
+  springAaxios.post("/games/addgame", {id: gameId})
+  setAddGame(1);
+};
+
 const GenreItem = ({ myGameIds = [], gameItem }) => {
+
   const [gameData, setGameData] = useState({});
+  const [addGame, setAddGame] = useState(0);
+
+  console.log("addGame => " + addGame);
 
   useEffect(() => {
     const fetchData = async() => {
@@ -47,7 +62,9 @@ const GenreItem = ({ myGameIds = [], gameItem }) => {
         </div>
         <div className="d-flex justify-content-center">
         {
-          myGameIds.includes(gameData?.id) ? <Link className="section-btn-added text-align: center">already in your library</Link> : <Link to = { `/games/${gameData?.id }`} className="card-button section-btn text-align: center">add to your library</Link>
+          (addGame === 0) 
+          ? (myGameIds.includes(gameData?.id) ? <button className="card-button section-btn-non-selectable text-align: center">already in your library</button> : <button onClick={ () => AddGameToLibrary(gameItem?.id, setAddGame) } className="card-button section-btn text-align: center">add to your library</button>)
+          : <button className="card-button section-btn-non-selectable text-align: center">Added to your library</button>
         }
         </div>
       </div>
@@ -122,34 +139,28 @@ const GenreItemWrapper = styled.div`
       transition: var(--transition-default);
       margin-bottom: 10px;
 
+      font-size: 16px;
+
       &:hover{
         background-color: var(--clr-green-normal);
       }
+    }
 
-      .section-btn {
-        display: flex;
-        margin-top: 35px;
-        &:hover{
-          background-color: var(--clr-green-dark-hover);
-        }
+    .section-btn {
+      display: flex;
+      margin-top: 35px;
+      &:hover{
+        background-color: var(--clr-green-dark-hover);
       }
     }
 
-    .section-btn-added {
-      border: 1px solid var(--clr-green-normal);
+    .section-btn-non-selectable {
       display: flex;
       margin-top: 35px;
-      min-width: 200px;
-      padding: 5px 20px;
-      text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: var(--clr-white);
-      position: relative;
-      z-index: 5;
+      &:hover{
+        background-color: unset;
+      }
     }
-  }
 
   .details-group{
     padding-top: 12px;
