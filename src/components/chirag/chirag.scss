@@ -1,12 +1,14 @@
 @import "../../app.scss";
 
 .hero {
+  z-index: -4;
   height: calc(100vh - 100px);
   overflow: hidden;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
 
   .wrapper {
+    z-index: -2;
     max-width: 1366px;
     height: 100%;
     margin: auto;
@@ -61,6 +63,7 @@
   }
 
   .imageContainer {
+    z-index: -1;
     height: 110%;
     position: absolute;
     top: 0;
@@ -86,6 +89,7 @@
   }
 
   .slidingTextContainer {
+    z-index: -3;
     position: absolute;
     font-size: 50vh;
     bottom: -120px;

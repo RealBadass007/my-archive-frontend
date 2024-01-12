@@ -28,20 +28,20 @@ const Navbar = () => {
 
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <Link to = "/" className='nav-link'>home</Link>
+                <Link onClick={() => dispatch(setSidebarOff())} to = "/" className='nav-link'>home</Link>
               </li>
               <li className='nav-item'>
-                <Link to = "/games" className='nav-link'>games</Link>
+                <Link onClick={() => dispatch(setSidebarOff())} to = "/games" className='nav-link'>games</Link>
               </li>
               <li className='nav-item'>
-                <Link to = "/portfolio" className='nav-link'>portfolio</Link>
+                <Link onClick={() => dispatch(setSidebarOff())} to = "/portfolio" className='nav-link'>portfolio</Link>
               </li>
             </ul>
 
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>
               <li className='text-uppercase fw-7 w-100 connect-text mb-2'>connect</li>
               <li className='connect-item'>
-                <Link to = "https://www.linkedin.com/in/chirag-bangera-894949201/" target='_blank' className='connect-link'>
+                <Link onClick={() => dispatch(setSidebarOff())} to = "https://www.linkedin.com/in/chirag-bangera-894949201/" target='_blank' className='connect-link'>
                   <BsLinkedin />
                 </Link>
               </li>

@@ -29,7 +29,7 @@ const PortfolioView = () => {
                 <section class="some-sections" id="Services">
                     <Parallax type="professionalexp" />
                 </section>
-                <section class="some-sections" >
+                <section >
                     <Oracle />
                 </section>
                 <section class="some-sectionss" >

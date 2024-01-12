@@ -61,7 +61,7 @@ const Languages = () => {
             <img style={{marginTop: "30px", width: "280px", height: "280px" }} src="/xslt.png" alt="" />
             <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/C.png" alt="" />
             <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/python.png" alt="" />
-            <img style={{marginTop: "40px", width: "270px", height: "200px"}} src="/typescript.png" alt="" />
+            <img style={{marginTop: "65px", width: "270px", height: "200px"}} src="/typescript.png" alt="" />
         </motion.div>
       </motion.div>
     </LanguagesWrapper>
