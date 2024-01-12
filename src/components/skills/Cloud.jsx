@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./skills.scss";
 import { color, motion, useInView } from "framer-motion";
 
+import styled from 'styled-components';
+
 const variants = {
   initial: {
     x: -500,
@@ -25,51 +27,63 @@ const Cloud = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <motion.div
-      className="services"
-      variants={variants}
-      initial="initial"
-      // animate="animate"
-      // whileInView="animate"
-      ref={ref}
-      animate={"animate"}
-    >
-      <motion.div className="textContainer" variants={variants}>
-        <br /><br />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <h1>
-            <motion.b whileHover={{color:"#009F9D"}}>CLOUD TECH</motion.b>
-          </h1>
-        </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          className="box"
-        >
+    <CloudWrapper>
+      <motion.div
+        className="services"
+        variants={variants}
+        initial="initial"
+        // animate="animate"
+        // whileInView="animate"
+        ref={ref}
+        animate={"animate"}
+      >
+          <motion.div className="textContainer" variants={variants}>
+            <p>
+            <br />
+              <br />
+            </p>
+            <hr />
+          </motion.div>
+        <motion.div className="titleContainer" variants={variants}>
           <div className="title">
-          <img style={{ marginTop: "70px", width: "150px", height: "220px" }} src="/aws_ec2.png" alt="" />
-        </div>
+            <h1>
+              <motion.b whileHover={{color:"#009F9D"}}>CLOUD TECH</motion.b>
+            </h1>
+          </div>
         </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{ marginTop: "70px",width: "150px", height: "220px" }} src="/aws_rds.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_s3.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_route53.png" alt="" />
+        <motion.div className="card-list" variants={variants}>
+            <img style={{ marginTop: "70px", width: "150px", height: "220px" }} src="/aws_ec2.png" alt="" />
+            <img style={{ marginTop: "70px",width: "150px", height: "220px" }} src="/aws_rds.png" alt="" />
+            <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_s3.png" alt="" />
+            <img style={{ marginTop: "70px",width: "150px", height: "200px" }} src="/aws_route53.png" alt="" />
         </motion.div>
       </motion.div>
-    </motion.div>
+    </CloudWrapper>
   );
 };
 
 export default Cloud;
+
+const CloudWrapper = styled.div`
+
+      .card-list{
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        gap: 40px;
+
+        @media screen and (min-width: 7000px){
+          grid-template-columns: repeat(2, 1fr); 
+          align-items: stretch;
+        }
+      
+        @media screen and (min-width: 1200px){
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .img-container {
+        justify-content: center;
+      }
+
+    `;

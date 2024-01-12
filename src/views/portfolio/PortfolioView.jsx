@@ -22,47 +22,47 @@ import Projects from "../../components/projects/Projects";
 const PortfolioView = () => {
     return (
         <PortfolioViewWrapper>
-            <div className='sc-games section'>
-            <section class="some-sections" id="Homepage">
-                <Chirag />
-            </section>
-            <section class="some-sections" id="Services">
-                <Parallax type="professionalexp" />
-            </section>
-            <section class="some-sections" >
-                <Oracle />
-            </section>
-            <section class="some-sectionss" >
-                <Cillyfox />
-            </section>
-            <section class="some-sectionsss" >
-                <Uinsports />
-            </section>
-            <section class="some-sections" id="Services">
-                <Parallax type="skills" />
-            </section>
-            <section >
-                <Languages />
-            </section>
-            <section>
-                <Frameworks />
-            </section>
-            <section>
-                <Tools />
-            </section>
-            <section>
-                <Cloud />
-            </section>
-            <section class="some-sections" id="Portfolio">
-                <Parallax type="projects" />
-            </section>
-            <Projects />
-            <section class="some-sections" id="Contact">
-                <Contact />
-            </section>
-            {/* Framer Motion Crash Course */}
-            {/* <Test/>
-            <Test/> */}
+            <div className='sc-details'>
+                <section class="some-sections" id="Homepage">
+                    <Chirag />
+                </section>
+                <section class="some-sections" id="Services">
+                    <Parallax type="professionalexp" />
+                </section>
+                <section class="some-sections" >
+                    <Oracle />
+                </section>
+                <section class="some-sectionss" >
+                    <Cillyfox />
+                </section>
+                <section class="some-sectionsss" >
+                    <Uinsports />
+                </section>
+                <section class="some-sections" id="Services">
+                    <Parallax type="skills" />
+                </section>
+                <section >
+                    <Languages />
+                </section>
+                <section>
+                    <Frameworks />
+                </section>
+                <section>
+                    <Tools />
+                </section>
+                <section>
+                    <Cloud />
+                </section>
+                <section class="some-sections" id="Portfolio">
+                    <Parallax type="projects" />
+                </section>
+                <Projects />
+                <section class="some-sections" id="Contact">
+                    <Contact />
+                </section>
+                {/* Framer Motion Crash Course */}
+                {/* <Test/>
+                <Test/> */}
             </div>
         </PortfolioViewWrapper>
     );
@@ -94,7 +94,12 @@ const PortfolioViewWrapper = styled.div`
         padding-top: 0px;
       }
 
-      
+      .sc-details{
+        min-height: 100vh;
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+
     `;
 
 // const PortfolioViewWrapper = styled.div`

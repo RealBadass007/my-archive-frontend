@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./skills.scss";
 import { color, motion, useInView } from "framer-motion";
 
+import styled from 'styled-components';
+
 const variants = {
   initial: {
     x: -500,
@@ -25,79 +27,74 @@ const Languages = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <motion.div
-      className="services"
-      style={{background: "linear-gradient(180deg, #16024d, #0c0c1d)"}}
-      variants={variants}
-      initial="initial"
-      // animate="animate"
-      // whileInView="animate"
-      ref={ref}
-      animate={"animate"}
-    >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-        <br />
-          A blend of technical curiosity
-          <br /> and creativity
-        </p>
-        <hr />
-      </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
-        <div className="title">
-          <h1>
-            <motion.b whileHover={{color:"#009F9D"}}>LANGUAGES</motion.b>
-          </h1>
-        </div>
-      </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          className="box"
-        >
+    <LanguagesWrapper>
+      <motion.div
+        className="services"
+        style={{background: "linear-gradient(180deg, #16024d, #0c0c1d)"}}
+        variants={variants}
+        initial="initial"
+        // animate="animate"
+        // whileInView="animate"
+        ref={ref}
+        animate={"animate"}
+      >
+        <motion.div className="textContainer" variants={variants}>
+          <p>
+          <br />
+            A blend of technical curiosity
+            <br /> and creativity
+          </p>
+          <hr />
+        </motion.div>
+        <motion.div className="titleContainer" variants={variants}>
           <div className="title">
-          <img style={{ marginTop: "30px", width: "250px", height: "250px" }} src="/java.png" alt="" />
-        </div>
+            <h1>
+              <motion.b whileHover={{color:"#009F9D"}}>LANGUAGES</motion.b>
+            </h1>
+          </div>
         </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{ marginTop: "70px", width: "170px", height: "190px" }} src="/plsql.png"/>
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{ marginTop: "90px", width: "280px", height: "120px" }} src="/bash.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{marginTop: "40px", width: "200px", height: "200px" }} src="/xml.png" alt="" />
+        <motion.div className="card-list" variants={variants}>
+            <img style={{ marginTop: "30px", width: "250px", height: "250px" }} src="/java.png" alt="" />
+            <img style={{ marginTop: "70px", width: "170px", height: "190px" }} src="/plsql.png"/>
+            <img style={{ marginTop: "90px", width: "280px", height: "120px" }} src="/bash.png" alt="" />
+            <img style={{marginTop: "40px", width: "200px", height: "200px" }} src="/xml.png" alt="" />
+            <img style={{marginTop: "30px", width: "280px", height: "280px" }} src="/xslt.png" alt="" />
+            <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/C.png" alt="" />
+            <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/python.png" alt="" />
+            <img style={{marginTop: "40px", width: "270px", height: "200px"}} src="/typescript.png" alt="" />
         </motion.div>
       </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          className="box"
-        >
-          <img style={{marginTop: "30px", width: "280px", height: "280px" }} src="/xslt.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/C.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{marginTop: "60px", width: "200px", height: "200px" }} src="/python.png" alt="" />
-        </motion.div>
-        <motion.div
-          className="box"
-        >
-          <img style={{marginTop: "40px", width: "270px", height: "200px"}} src="/typescript.png" alt="" />
-        </motion.div>
-      </motion.div>
-    </motion.div>
+    </LanguagesWrapper>
   );
 };
 
 export default Languages;
+
+const LanguagesWrapper = styled.div`
+
+      .card-list{
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        gap: 40px;
+      
+        @media screen and (min-width: 7000px){
+            grid-template-columns: repeat(2, 1fr); 
+            align-items: stretch;
+        }
+
+        @media screen and (min-width: 900px){
+          grid-template-columns: repeat(3, 1fr); 
+          align-items: stretch;
+        }
+      
+        @media screen and (min-width: 1200px){
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .img-container {
+        justify-content: center;
+      }
+
+    `;
