@@ -45,7 +45,7 @@ const Oracle = () => {
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
           <div className="title">
-            <img src="/oracle.jpg" alt="" />
+            <img style={{objectFit : "cover"}} src="/oracle.jpg" alt="" />
             <h1>
               <motion.b style={{color:"crimson"}} whileHover={{color:"crimson"}}>Oracle Financial Services Software</motion.b>
             </h1>

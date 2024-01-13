@@ -44,7 +44,7 @@ const Oracle = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/cillyfox.jpg" alt="" />
+          <img style={{objectFit : "cover"}}  src="/cillyfox.jpg" alt="" />
           <h1>
             <motion.b style={{color:"white"}} whileHover={{color:"white"}}>Cillyfox Inc.</motion.b>
           </h1>
@@ -59,8 +59,10 @@ const Oracle = () => {
       <div className="box">
         <div className="para-text">
           ● Developed 3 Mixed Reality (MR) mini-games from scratch in Unity Engine for MR Headsets and created dynamic game-logic using C# and built 3D models using Blender software<br/>
-          ● Optimized core gameplay mechanics, enhancing the overall user experience<br/>
-          ● Conducted rigorous play-testing to identify and resolve bugs related to user interactions
+          ● Optimized core gameplay mechanics and functionalities, enhancing the overall user experience<br/>
+          ● Conducted rigorous play-testing to identify and resolve bugs related to user interactions thus ensuring stable and optimal performance
+
+
         </div>
       </div>
       </motion.div>

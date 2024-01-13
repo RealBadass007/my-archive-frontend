@@ -43,7 +43,7 @@ const Oracle = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img style={{width: "300px"}} src="/uinsports.png" alt="" />
+          <img style={{objectFit : "cover"}} src="/uinsports.png" alt="" />
           <h1>
             <motion.b style={{color:"rgb(295, 110, 17)"}}>UInsports Inc.</motion.b>
           </h1>
@@ -57,9 +57,10 @@ const Oracle = () => {
       <motion.div className="listContainer" variants={variants}>
       <div className="box">
         <div className="para-text">
-          ● Created digital posts, posters, graphics and art for all company platforms, including social media, websites,
-email campaigns, resulting in a 40% increase in social media engagement<br/>
-          ● Collaborated with company founders and effectively managed time zone differences to meet project deadlines
+          ● Collaborated with the marketing team to conceptualize and create digital posts, graphics and art for all company platforms, 
+          including social media, websites,email campaigns, resulting in a 40% increase in social media engagement<br/>
+          ● Worked closely with company founders to ensure alignment with the brand identity, incorporating feedback to refine designs and 
+          effectively manage time zone differences to deliver high-quality assets on time
         </div>
       </div>
       </motion.div>

@@ -57,7 +57,7 @@ const PortfolioView = () => {
                     <Parallax type="projects" />
                 </section>
                 <Projects />
-                <section class="some-sections" id="Contact">
+                <section id="Contact" class="some-sections">
                     <Contact />
                 </section>
                 {/* Framer Motion Crash Course */}
