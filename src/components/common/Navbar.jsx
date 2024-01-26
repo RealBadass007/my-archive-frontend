@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className='container w-100'>
         <div className='navbar-content'>
           <div className='brand-and-toggler d-flex align-items-center justify-content-between'>
-            <Link to = "/" className="navbar-brand text-white text-uppercase no-wrap">MY <span>ARCHIVE</span></Link>
+            <Link to = "/" reloadDocument className="navbar-brand text-white text-uppercase no-wrap">MY <span>ARCHIVE</span></Link>
             <button type='button' className='navbar-show-btn text-white' onClick={() => dispatch(setSidebarOn())}>
               <HiOutlineMenuAlt3 size = { 25 } />
             </button>
@@ -28,7 +28,7 @@ const Navbar = () => {
 
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <Link onClick={() => dispatch(setSidebarOff())} to = "/" className='nav-link'>home</Link>
+                <Link onClick={() => dispatch(setSidebarOff())} to = "/" className='nav-link' reloadDocument>home</Link>
               </li>
               <li className='nav-item'>
                 <Link onClick={() => dispatch(setSidebarOff())} to = "/games" className='nav-link'>games</Link>

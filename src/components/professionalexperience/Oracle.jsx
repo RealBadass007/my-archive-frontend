@@ -59,16 +59,14 @@ const Oracle = () => {
         <motion.div className="listContainer" variants={variants}>
         <div className="box">
           <div className="para-text">
-            ● Planned, designed and executed the development of core Business Logic and robust, highly scalable RESTful
-            APIs for more than 25+ new features, in a fast paced, high-intensity work environment <br/>
-            ● Identified and resolved 10+ critical bugs, 3 within the production environment, ensuring system stability and
-            minimizing disruptions<br/>
-            ● Actively contributed to 3 concurrent projects over a four-month period and ensured timely delivery of all
-            components with minimal technical debt<br/>
-            ● Implemented automation for starting over 45 mock servers daily, thus resulting in an efficiency gain of 93.3%<br/>
-            ● Represented my department at a client location and played a pivotal role in the seamless installation of the
-            banking application and subsequent build deployments on application servers and web servers<br/>
-            ● Conducted on-site integration of multiple modules post the initial development cycle<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            ● Planned, designed and developed core Business Logic and robust, highly scalable RESTful APIs in Java for more than 
+            25 new features, following the appropriate design patterns <br/>
+            ● Identified bugs through testing, utilized bash scripting to analyze logs and used debugging tools to resolve 
+            critical issues, thus ensuring system stability and minimizing disruptions.<br/>
+            ● Actively contributed to 3 concurrent projects and ensured timely delivery of all components with minimal technical debt.<br/>
+            ● Implemented an automated process to initialize VNC servers daily, leading to an efficiency gain of 93.3%.<br/>
+            ● Represented my department at a client location and played a pivotal role in setting up and configuring Oracle’s banking application 
+            on client’s UAT, SIT and Production environments.<br/><br/><br/><br/><br/><br/><br/><br/><br/>
           </div>
         </div>
         </motion.div>
