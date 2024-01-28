@@ -58,9 +58,9 @@ const Oracle = () => {
       <motion.div className="listContainer" variants={variants}>
       <div className="box">
         <div className="para-text">
-          ● Developed 3 Mixed Reality (MR) mini-games from scratch in Unity Engine for MR Headsets and created dynamic game-logic using C# and built 3D models using Blender software<br/>
-          ● Optimized core gameplay mechanics and functionalities, enhancing the overall user experience.<br/>
-          ● Conducted rigorous play-testing to identify and resolve bugs related to user interactions.
+          ● Developed 3 Mixed Reality (MR) mini-games from scratch in Unity Engine for MR Headsets and created dynamic game-logic and UI using C# and Javascript, built 3D models using Blender software<br/>
+          ● Optimized internal gameplay mechanics and functionalities, enhancing the overall UX.<br/>
+          ● Conducted rigorous testing to troubleshoot and resolve bugs related to user interactions.
 
 
         </div>

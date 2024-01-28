@@ -10,14 +10,14 @@ const items = [
     id: 1,
     title: "MY ARCHIVE",
     img: "/myarchive_project.png",
-    desc: "A digital personal archive built using Spring boot and React, where users can upload and maintain data related to games, movies, books, etc. Containerized the components using Docker and utilized Github Actions CI/CD workflow for seamless build and deployment on the AWS EC2 instance. Leveraged AWS RDS (PostgreSQL) database cloud service for scalable, secure, and efficient data retreival.",
+    desc: "A personal digital archive where users can upload and maintain content related to games, movies etc. Containerized the Spring Boot and React applications using Docker and utilized Github Actions CI/CD pipeline for seamless build and deployment on the cloud AWS EC2 instance. Leveraged AWS RDS (PostgreSQL) database cloud service for scalable, secure, and efficient data retreival. Registered and hosted my domain on AWS cloud using Route53.",
     link: "/",
   },
   {
     id: 2,
     title: "Intoxication Detection App",
     img: "/d3app.png",
-    desc: "A Software based solution to detect driver’s alcohol intoxication state, thus preventing DUI accidents. Detection algorithm comprises 3 neurocognitive tests which evaluates the user's reaction time & accuracy. The app also has a feature for sharing the current location to any of the user’s contacts using Whatsapp API. It consumes google maps API for booking a cab from the user’s current location to their saved plus code",
+    desc: "Developed using the Flutter framework, this mobile app employs a series of 3 neurocognitive tests to assess the user's reaction time and accuracy for determining their intoxication state. Implemented a robust authentication and registration system using Firebase, ensuring a streamlined and secure user journey. Leverages Google Maps’ geolocation APIs & Whatsapp APIs to facilitate location sharing to contacts and location-based cab booking.",
     link: "https://github.com/RealBadass007/myapp_3dapp",
   },
   {
