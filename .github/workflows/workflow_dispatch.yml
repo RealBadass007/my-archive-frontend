@@ -1,4 +1,4 @@
-name: My Archive CICD
+name: My Archive Workflow_Dispatch CICD
 
 on:
   workflow_dispatch:
